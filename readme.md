@@ -53,14 +53,6 @@ Este proyecto es una prueba técnica desarrollada para maquetar la página princ
    - Verifica que la página se visualice correctamente en diferentes tamaños de pantalla.
    - Prueba el carrusel y el slider de productos para confirmar su funcionamiento.
 
-## Capturas de Pantalla
-
-- **Vista de escritorio:**
-  *(Adjuntar capturas si es necesario)*
-
-- **Vista móvil:**
-  *(Adjuntar capturas si es necesario)*
-
 ## Aspectos a destacar
 
 - La maquetación es **Pixel Perfect** según el diseño de Zeplin.
@@ -91,4 +83,4 @@ Este proyecto es una prueba técnica desarrollada para maquetar la página princ
 - Contacto: andreereyes0@gmail.com
 
 **Fecha de entrega:**  
-- In progress
+- 14/12/2024
