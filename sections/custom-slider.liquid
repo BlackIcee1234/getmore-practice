@@ -1,0 +1,243 @@
+<div class="product-slider-container">
+  <div class="left-section">
+    <div class="left-section-content">
+      <h2>{{ section.settings.title | raw }}</h2>
+      <p>{{ section.settings.description | raw }}</p>
+      <div class="custom-slider-controls">
+            <!-- Contenedor de los puntitos -->
+            <div class="custom-pagination"></div>
+
+            <!-- Botón para ir hacia atrás -->
+            <button class="custom-arrow custom-arrow-left" aria-label="Previous slide">
+                <span>&#x276E;</span>
+            </button>
+
+            <!-- Botón para ir hacia adelante -->
+            <button class="custom-arrow custom-arrow-right" aria-label="Next slide">
+                <span>&#x276F;</span>
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <div class="right-section">
+    <div class="splide" id="productSlider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for product in section.settings.product_slider.products %}
+            <li class="splide__slide">
+              <div class="product-item">
+                <div class="product-number">{{ forloop.index }}</div>
+                <img class="product-image" src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('#productSlider', {
+        type       : 'slide',
+        perPage    : {{ section.settings.items_per_slide }},
+        focus      : 'center',
+        gap: '36px',
+        pagination: false,
+        arrows     : false,
+        breakpoints: {
+        600: {
+            perPage: 1,
+        },
+        900: {
+            perPage: 2,
+        }
+        }
+    }).mount();
+
+  // Referencias a los controles personalizados
+  const prevButton = document.querySelector('.custom-arrow-left');
+  const nextButton = document.querySelector('.custom-arrow-right');
+  const paginationContainer = document.querySelector('.custom-pagination');
+
+  // Agrega eventos a las flechas
+  prevButton.addEventListener('click', () => splide.go('<')); // Ir al slide anterior
+  nextButton.addEventListener('click', () => splide.go('>')); // Ir al siguiente slide
+
+  // Genera los puntitos dinámicamente
+  const slidesCount = splide.Components.Slides.length; // Número total de slides
+  for (let i = 0; i < slidesCount; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (i === splide.index) dot.classList.add('active'); // Activa el puntito actual
+
+    // Agrega un evento para navegar al slide correspondiente
+    dot.addEventListener('click', () => splide.go(i));
+
+    paginationContainer.appendChild(dot);
+  }
+
+  // Actualiza el estado de los puntitos cuando cambia el slider
+  splide.on('move', () => {
+    const dots = document.querySelectorAll('.custom-pagination .dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === splide.index); // Activa/desactiva el puntito
+    });
+  });
+});
+
+</script>
+
+<style>
+.product-slider-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 486px;
+  background: white;
+}
+
+.left-section {
+  width: 40%;
+  height: 100%;
+  background-image: url('{{ section.settings.left_section_image | img_url: "original" }}');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.left-section-content {
+  text-align: center;
+  position: relative;
+}
+
+.left-section h2 {
+  margin-bottom: 10px;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 64px;
+  letter-spacing: -0.06px;
+  color: #ffffff;
+}
+
+.left-section p {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.51px;
+}
+
+.right-section {
+    width: 55%;
+    height: 100%;
+    padding-top: 51px;
+    padding-bottom: 73px;
+    background: white;
+}
+
+.splide__slide {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.product-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-item {
+  position: relative;
+  height: 100%;
+}
+
+.product-number {
+  position: absolute;
+  top: 11px;
+  left: 17px;
+  background-color: #cbe346;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+</style>
+
+{% schema %}
+    {
+      "name": "Slider",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Slider Configuration"
+        },
+        {
+          "type": "collection",
+          "id": "product_slider",
+          "label": "Select Products"
+        },
+        {
+          "type": "range",
+          "id": "items_per_slide",
+          "label": "Number of products per slide",
+          "min": 1,
+          "max": 5,
+          "default": 3
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Section Title",
+          "default": "Our Rackets"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "description",
+          "label": "Section Description",
+          "default": "Discover our rackets and learn to play Tennis like a pro."
+        },
+        {
+          "type": "image_picker",
+          "id": "left_section_image",
+          "label": "Background Image of the Left Section"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Default",
+          "category": "Custom"
+        }
+      ]
+    }
+{% endschema %}
+    
+    
