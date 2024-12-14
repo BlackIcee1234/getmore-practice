@@ -1,164 +1,127 @@
 {
   "sections": {
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
-      "type": "image-banner",
+      "type": "custom-image-banner",
       "blocks": {
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0": {
           "type": "heading",
           "settings": {
-            "heading": "Generated test data",
+            "heading": "<h1 class=\"headline\">  Las mejores raquetas para <br>  jugar <span class=\"highlighted-word\">Tennis<\/span>\n<\/h1>",
             "heading_size": "h1"
-          }
-        },
-        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-1": {
-          "type": "text",
-          "settings": {
-            "text": "A theme and populated test store by Shopify to help you test commerce primitives.",
-            "text_style": "body"
           }
         },
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop products",
+            "button_label_1": "ACERCA DE NOSOTROS",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
+            "button_background_color_1": "rgba(0,0,0,0)",
+            "button_border_color_1": "#ffffff",
+            "button_border_radius_1": 27,
+            "button_font_size_1": "13",
+            "button_text_color_1": "#ffffff",
+            "button_padding_1": "20px 30px",
+            "button_show_arrow_1": true,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_background_color_2": "#000000",
+            "button_border_color_2": "#ffffff",
+            "button_border_radius_2": 5,
+            "button_font_size_2": "16px",
+            "button_text_color_2": "#ffffff",
+            "button_padding_2": "10px 20px",
+            "button_show_arrow_2": true
           }
         }
       },
       "block_order": [
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-0",
-        "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-1",
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2"
       ],
       "custom_css": [],
       "settings": {
-        "image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "image": "shopify:\/\/shop_images\/group_2x_80cd91a7-b46b-4f32-859e-0936871e0317.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_content_position": "middle-left",
         "show_text_box": true,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "<strong>Featured products<\/strong>",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "automated-collection",
-        "products_to_show": 10,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "portrait",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "f1552b18-6017-4231-810d-74e61da22c37": {
-      "type": "image-with-text",
+    "image_with_text_jYF89R": {
+      "type": "custom-image-with-text",
       "blocks": {
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-0": {
+        "heading_XcdanL": {
           "type": "heading",
           "settings": {
-            "heading": "Stay hydrated",
+            "heading": "Raquetas.Accesorios.<\/br>Pelotas.",
             "heading_size": "h1"
           }
         },
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1": {
+        "text_EDPNkL": {
           "type": "text",
           "settings": {
-            "text": "<p>Try our wax subscription so you can fly high, but never dry.<\/p>",
+            "text": "Conoce nuestras raquetas y aprende a jugar <\/br>Tennis cómo un profesional.",
             "text_style": "body"
-          }
-        },
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get waxy now",
-            "button_link": "shopify:\/\/products\/selling-plans-ski-wax"
           }
         }
       },
       "block_order": [
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-0",
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1",
-        "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2"
+        "heading_XcdanL",
+        "text_EDPNkL"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "middle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
-    "38cdf60f-e431-43b5-aac3-7e6215447d67": {
-      "type": "collection-list",
-      "blocks": {
-        "template--18309637636369__38cdf60f-e431-43b5-aac3-7e6215447d67-1680164898782d94ce-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hydrogen"
-          }
-        },
-        "template--18309637636369__38cdf60f-e431-43b5-aac3-7e6215447d67-1680164898782d94ce-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "automated-collection"
-          }
-        }
-      },
-      "block_order": [
-        "template--18309637636369__38cdf60f-e431-43b5-aac3-7e6215447d67-1680164898782d94ce-0",
-        "template--18309637636369__38cdf60f-e431-43b5-aac3-7e6215447d67-1680164898782d94ce-1"
-      ],
+    "custom-slider": {
+      "type": "custom-slider",
       "settings": {
-        "title": "<strong>Collections<\/strong>",
-        "heading_size": "h1",
-        "image_ratio": "portrait",
-        "columns_desktop": 2,
+        "product_slider": "raquetas",
+        "items_per_slide": 2,
+        "title": "Nuestras <\/br> <b>Raquetas<\/b>",
+        "description": "Conoce nuestras raquetas y <\/br>aprende a jugar Tennis como un <\/br>profesional.",
+        "left_section_image": "shopify:\/\/shop_images\/ball-color-court-1405355_3x_d7a1824d-e7e6-4190-8d88-a2ad6f1334d0.png"
+      }
+    },
+    "image_banner_p4zNjY": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/action-athlete-ball-342361.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
-    "featured_collection",
-    "f1552b18-6017-4231-810d-74e61da22c37",
-    "38cdf60f-e431-43b5-aac3-7e6215447d67"
+    "image_with_text_jYF89R",
+    "custom-slider",
+    "image_banner_p4zNjY"
   ]
 }
