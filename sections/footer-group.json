@@ -3,47 +3,72 @@
   "type": "footer",
   "sections": {
     "footer": {
-      "type": "footer",
+      "type": "custom-footer",
       "blocks": {
+        "social_icon_Up8wnL": {
+          "type": "social_icon",
+          "settings": {
+            "social_link": "",
+            "icon_image": "shopify:\/\/shop_images\/group-23_3x_a4e98eba-e6ed-4bf7-8bad-81b2dd7e26e2.png"
+          }
+        },
+        "social_icon_kMtdaA": {
+          "type": "social_icon",
+          "settings": {
+            "social_link": "",
+            "icon_image": "shopify:\/\/shop_images\/group-24_3x_5d1b84a9-6580-4b03-a04e-16544a5e199f.png"
+          }
+        },
+        "social_icon_T9ER6y": {
+          "type": "social_icon",
+          "settings": {
+            "social_link": "",
+            "icon_image": "shopify:\/\/shop_images\/group-25_3x_4fbdda6f-f7c5-4a58-af31-267554fad955.png"
+          }
+        },
+        "social_icon_MKFLyn": {
+          "type": "social_icon",
+          "settings": {
+            "social_link": "",
+            "icon_image": "shopify:\/\/shop_images\/group-22_3x_032d2923-2677-4a9a-89b8-552a61336c66.png"
+          }
+        },
+        "social_icon_fmjMGE": {
+          "type": "social_icon",
+          "settings": {
+            "social_link": "",
+            "icon_image": "shopify:\/\/shop_images\/group-26_3x_a3879337-6662-47de-b1d2-9e645efbb0ba.png"
+          }
+        },
         "55172ef6-3a6a-4cfa-b790-88739b47891f": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "",
             "menu": "main-menu"
-          }
-        },
-        "6e0c08d4-cd4c-439c-b5e2-a483bba29ec2": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
-          }
-        },
-        "f95fe295-fbc2-4d2b-a952-72670c2ab328": {
-          "type": "text",
-          "settings": {
-            "heading": "Resources",
-            "subtext": "<ul><li><a href=\"https:\/\/shopify.dev\/docs\/apps\/tools\/development-stores\/generated-data\" target=\"_blank\" title=\"Generated test data developer docs\">Generated test data docs<\/a><\/li><li><a href=\"https:\/\/shopify.dev\/docs\/apps\/tools\/graphiql-admin-api\" target=\"_blank\" title=\"GraphiQL API explorer\">GraphiQL API explorer<\/a><\/li><\/ul>"
           }
         }
       },
       "block_order": [
-        "55172ef6-3a6a-4cfa-b790-88739b47891f",
-        "6e0c08d4-cd4c-439c-b5e2-a483bba29ec2",
-        "f95fe295-fbc2-4d2b-a952-72670c2ab328"
+        "social_icon_Up8wnL",
+        "social_icon_kMtdaA",
+        "social_icon_T9ER6y",
+        "social_icon_MKFLyn",
+        "social_icon_fmjMGE",
+        "55172ef6-3a6a-4cfa-b790-88739b47891f"
       ],
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": false,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": true,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 64,
+        "padding_bottom": 60
       }
     }
   },
